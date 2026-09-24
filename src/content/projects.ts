@@ -85,7 +85,7 @@ export const projects: Project[] = [
     ],
     stack: ['HTML', 'CSS', 'Parallax'],
     repoUrl: 'https://github.com/nicolasmoreiraferreira/projeto-cordel',
-    demoUrl: 'https://nicolasmoreiraferreira.github.io/projeto-cordel/index.html.html',
+    demoUrl: 'https://nicolasmoreiraferreira.github.io/projeto-cordel/',
     cover: 'covers/projeto-cordel.png',
     accent: '#f59e0b',
     year: '2023',
