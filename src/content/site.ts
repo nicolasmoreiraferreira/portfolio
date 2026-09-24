@@ -5,8 +5,8 @@
 
 export const site = {
   name: 'Nicolas Moreira Ferreira',
-  role: 'Desenvolvedor Front-end',
-  stackLine: 'HTML · CSS · JavaScript · TypeScript · React',
+  role: 'Desenvolvedor Full Stack',
+  stackLine: 'Front-end · Back-end · Automação',
   location: 'São Paulo, Brasil',
   availableForWork: true,
 
@@ -19,54 +19,59 @@ export const site = {
   linkedinUrl: 'https://www.linkedin.com/in/seu-usuario/',
 
   hero: {
-    headline: 'Interfaces web que carregam rápido, funcionam em qualquer tela e são acessíveis de verdade.',
+    headline:
+      'Interfaces que carregam rápido e sistemas que trabalham sozinhos nos bastidores.',
     summary:
-      'Sou desenvolvedor front-end em São Paulo. Construo aplicações web com HTML semântico, CSS moderno e JavaScript/TypeScript, com foco em código legível, performance e experiência de uso.',
+      'Sou desenvolvedor full stack em São Paulo. Construo interfaces web com HTML semântico, CSS moderno, JavaScript/TypeScript e React, e desenvolvo as automações e integrações em Python que fazem o trabalho pesado rodar de forma confiável.',
   },
 
   about: [
     'Comecei na programação pelo caminho clássico: HTML5 e CSS3, depois JavaScript, construindo cada projeto do zero para entender o que acontece por baixo do framework. Essa base é o que me permite hoje debugar layout, acessibilidade e performance com segurança, em vez de apenas aplicar receitas prontas.',
-    'Meu foco atual é o ecossistema front-end moderno — componentização com React, tipagem estática com TypeScript, consumo de APIs REST e boas práticas de acessibilidade (WCAG) e responsividade. Estudo e aplico testes, organização de projeto e revisão de código como parte do fluxo normal de trabalho, não como etapa opcional.',
-    'Também mantenho projetos próprios em Python, o que me dá repertório para conversar sobre back-end, integrações e consumo de APIs a partir do front. Busco minha primeira oportunidade profissional como desenvolvedor, em um time onde eu possa contribuir com entrega de qualidade e evoluir com feedback técnico.',
+    'Do lado do back-end, desenvolvo em Python e Node.js. Mantenho um sistema de automação de processos web em produção, com mais de 190 módulos, orquestração de sessões de navegador, persistência de estado, empacotamento para Windows e pipeline de releases versionadas rodando em GitHub Actions. Trabalhar nesse projeto me ensinou na prática o que é arquitetura concorrente, idempotência de operações e tratamento de falha parcial — problemas que não aparecem em exercícios de curso.',
+    'Estou cursando o Superior de Tecnologia em Análise e Desenvolvimento de Sistemas na Cruzeiro do Sul (EAD), o que dá base formal para o que já venho aplicando na prática: estruturas de dados, engenharia de software, banco de dados e redes.',
+    'Busco minha primeira oportunidade profissional como desenvolvedor — front-end, back-end ou full stack — em um time onde eu possa contribuir com entrega de qualidade e evoluir com feedback técnico.',
   ],
 
   highlights: [
     {
-      title: 'Base sólida em fundamentos',
+      title: 'Front-end com fundamentos',
       description:
         'Seis projetos públicos construídos manualmente em HTML, CSS e JavaScript — sem depender de geradores de layout.',
     },
     {
-      title: 'Foco em acessibilidade',
+      title: 'Back-end e automação em Python',
       description:
-        'Marcação semântica, navegação por teclado, contraste adequado e respeito a `prefers-reduced-motion`.',
+        'Sistema desktop em produção com 190+ módulos, Playwright, concorrência com threads e persistência de estado.',
     },
     {
-      title: 'TypeScript no dia a dia',
+      title: 'Entrega com qualidade',
       description:
-        'Tipagem estrita, componentes pequenos e reutilizáveis e separação clara entre dados, apresentação e lógica.',
+        'TypeScript estrito, ESLint, testes de regressão e pipelines de CI que barram código quebrado antes da publicação.',
     },
     {
-      title: 'Documentação como hábito',
+      title: 'Formação e método',
       description:
-        'Cada repositório tem README explicando o problema, as decisões técnicas e como executar o projeto.',
+        'Graduação em Análise e Desenvolvimento de Sistemas em andamento, combinada com estudo prático orientado a projeto.',
     },
   ],
 
-  // Formação e cursos — ajuste conforme a sua realidade.
+  // Formação acadêmica e cursos.
   education: [
+    {
+      title: 'Superior de Tecnologia em Análise e Desenvolvimento de Sistemas',
+      institution: 'Cruzeiro do Sul — Graduação EAD',
+      period: '2026 — em andamento',
+      description:
+        'Graduação com foco em engenharia de software, estruturas de dados, banco de dados, redes e desenvolvimento de sistemas. Cursando em paralelo ao trabalho prático em projetos próprios.',
+      current: true,
+    },
     {
       title: 'Desenvolvimento Front-end — HTML5, CSS3 e JavaScript',
       institution: 'Curso em Vídeo',
       period: '2023',
       description:
         'Formação prática com projetos completos: layout responsivo, variáveis CSS, mobile-first, manipulação de DOM e consumo de dados.',
-    },
-    {
-      title: 'Bacharelado / Curso técnico em andamento',
-      institution: 'A preencher',
-      period: 'Atual',
-      description: 'Substitua por sua formação real ou remova este item.',
+      current: false,
     },
   ],
 

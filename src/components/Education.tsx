@@ -8,19 +8,31 @@ export function Education() {
       <div className="container-page">
         <SectionHeading
           eyebrow="Formação"
-          title="Como eu estou me formando"
-          description="Formação prática com projetos entregues, complementada por estudo contínuo e código aberto."
+          title="Base acadêmica e prática"
+          description="Graduação em andamento na área de tecnologia, somada a formação prática com projetos entregues e código em produção."
         />
 
         <ol className="relative space-y-6 border-l border-slate-400/15 pl-6 md:pl-8">
           {site.education.map((item, index) => (
             <Reveal key={item.title} delay={index * 110}>
               <li className="relative">
-                <span className="absolute -left-[1.72rem] top-6 size-3 rounded-full border-2 border-ink-900 bg-accent-400 md:-left-[2.22rem]" />
+                <span
+                  className={`absolute -left-[1.72rem] top-6 size-3 rounded-full border-2 border-ink-900 md:-left-[2.22rem] ${
+                    item.current ? 'bg-emerald-400' : 'bg-accent-400'
+                  }`}
+                />
                 <div className="card p-6">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <h3 className="text-base font-semibold text-slate-50">{item.title}</h3>
-                    <span className="chip font-mono">{item.period}</span>
+                    <div className="flex flex-wrap items-center gap-2">
+                      {item.current && (
+                        <span className="chip border-emerald-400/35 bg-emerald-400/12 !text-emerald-300">
+                          <span className="size-1.5 rounded-full bg-emerald-400" />
+                          Em andamento
+                        </span>
+                      )}
+                      <span className="chip font-mono">{item.period}</span>
+                    </div>
                   </div>
                   <p className="mt-1 text-sm font-medium text-accent-300">{item.institution}</p>
                   <p className="mt-3 text-sm leading-relaxed text-slate-400">{item.description}</p>
@@ -31,11 +43,12 @@ export function Education() {
         </ol>
 
         <Reveal>
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
+          <div className="mt-10 grid gap-4 sm:grid-cols-4">
             {[
-              { label: 'Projetos públicos', value: '6' },
+              { label: 'Projetos no portfólio', value: '7' },
+              { label: 'Módulos em produção', value: '190+' },
               { label: 'Demos publicadas', value: '5' },
-              { label: 'Desde', value: '2023' },
+              { label: 'Programando desde', value: '2023' },
             ].map((stat) => (
               <div key={stat.label} className="card p-6 text-center">
                 <p className="font-mono text-3xl font-bold text-accent-300">{stat.value}</p>

@@ -3,7 +3,7 @@ import { projects, type Project } from '../content/projects'
 import { Reveal } from './Reveal'
 import { SectionHeading } from './SectionHeading'
 
-const filters = ['Todos', 'Front-end', 'Responsivo', 'JavaScript'] as const
+const filters = ['Todos', 'Back-end', 'Front-end', 'Responsivo', 'JavaScript'] as const
 type Filter = (typeof filters)[number]
 
 export function Projects() {
@@ -21,7 +21,7 @@ export function Projects() {
         <SectionHeading
           eyebrow="Projetos"
           title="O que eu construí e o que aprendi construindo"
-          description="Seis projetos com código aberto. Cinco deles estão publicados e podem ser abertos agora no navegador — clique em 'Ver ao vivo'."
+          description="Sete projetos entre front-end e back-end. Seis têm código aberto e cinco estão publicados para abrir agora no navegador. O projeto de automação é de código fechado — apresento a arquitetura e as decisões na conversa."
         />
 
         <div className="mb-10 flex flex-wrap gap-2" role="group" aria-label="Filtrar projetos por categoria">
@@ -65,7 +65,7 @@ export function Projects() {
             <div>
               <h3 className="text-base font-semibold text-slate-100">Quer ver o código?</h3>
               <p className="mt-1 text-sm text-slate-400">
-                Todos os repositórios estão públicos, com histórico de commits e README.
+                Os projetos de front-end estão públicos, com histórico de commits e README.
               </p>
             </div>
             <a
@@ -168,14 +168,20 @@ function ProjectCard({
               </svg>
             </a>
           )}
-          <a
-            href={project.repoUrl}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="btn btn-ghost !px-3.5 !py-2 !text-[0.8rem]"
-          >
-            Código
-          </a>
+          {project.repoUrl ? (
+            <a
+              href={project.repoUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="btn btn-ghost !px-3.5 !py-2 !text-[0.8rem]"
+            >
+              Código
+            </a>
+          ) : (
+            <span className="chip !text-[0.72rem]" title="Projeto de código fechado">
+              Código privado
+            </span>
+          )}
           <button
             type="button"
             onClick={onToggle}

@@ -2,26 +2,55 @@
  * Projetos exibidos no portfólio.
  * `cover` aponta para uma imagem em `public/covers/`.
  * `demoUrl` só existe quando o projeto está publicado e funcionando.
+ * `private: true` indica projeto de código fechado, apresentado na conversa.
  */
+
+export type ProjectCategory = 'Front-end' | 'Responsivo' | 'JavaScript' | 'Back-end'
 
 export type Project = {
   slug: string
   title: string
-  category: 'Front-end' | 'JavaScript' | 'Responsivo'
+  category: ProjectCategory
   summary: string
   problem: string
   solution: string
   highlights: string[]
   stack: string[]
-  repoUrl: string
+  repoUrl?: string
   demoUrl?: string
   cover: string
   accent: string
   year: string
+  private?: boolean
   featured?: boolean
 }
 
 export const projects: Project[] = [
+  {
+    slug: 'botsnay',
+    title: 'BOTSNAY — Plataforma de Automação',
+    category: 'Back-end',
+    summary:
+      'Sistema desktop de automação de processos web com 190+ módulos Python, sessões de navegador isoladas e pipeline de releases versionadas.',
+    problem:
+      'Automatizar fluxos longos em páginas web com sessões isoladas, onde uma falha parcial não pode corromper o estado já conquistado nem repetir operações sensíveis como pagamentos.',
+    solution:
+      'Arquitetura modular em Python com interface Tkinter/ttkbootstrap e Playwright síncrono. Cada sessão de navegador pertence à thread que a criou, e a comunicação com a interface acontece por filas. O estado é persistido de forma atômica em JSON, com idempotência garantida nas operações críticas. As releases seguem versionamento, hash SHA-256, manifesto de atualização e validação automatizada em CI antes da publicação.',
+    highlights: [
+      '190+ módulos Python com separação clara de responsabilidades',
+      'Sessões de navegador isoladas e concorrência com threads e filas',
+      'Operações críticas idempotentes, com confirmação positiva obrigatória',
+      'Escrita atômica de estado, resistente a bloqueios de arquivo no Windows',
+      'Pipeline de release: versionamento, hash, manifesto e validação em CI',
+      'Extensão de navegador (Manifest V3) em JavaScript para injeção de conteúdo',
+    ],
+    stack: ['Python', 'Playwright', 'Tkinter / ttkbootstrap', 'Threading', 'JSON', 'REST APIs', 'CI/CD'],
+    cover: 'covers/botsnay.svg',
+    accent: '#3776ab',
+    year: '2026',
+    private: true,
+    featured: true,
+  },
   {
     slug: 'projeto-login',
     title: 'Tela de Login Responsiva',
@@ -66,7 +95,6 @@ export const projects: Project[] = [
     cover: 'covers/projeto-social.png',
     accent: '#818cf8',
     year: '2023',
-    featured: true,
   },
   {
     slug: 'projeto-cordel',

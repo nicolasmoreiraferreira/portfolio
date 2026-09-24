@@ -1,6 +1,6 @@
 import { site } from '../content/site'
 
-const stack = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Git']
+const stack = ['HTML5', 'CSS3', 'TypeScript', 'React', 'Node.js', 'Python', 'Playwright', 'Git']
 
 export function Hero() {
   return (
@@ -63,10 +63,12 @@ function HeroVisual() {
   const lines = [
     { indent: 0, tokens: [['const ', 'text-iris-400'], ['perfil', 'text-accent-300'], [' = {', 'text-slate-400']] },
     { indent: 1, tokens: [['nome', 'text-slate-300'], [": '", 'text-slate-500'], ['Nicolas Moreira Ferreira', 'text-emerald-300'], ["',", 'text-slate-500']] },
-    { indent: 1, tokens: [['cargo', 'text-slate-300'], [": '", 'text-slate-500'], ['Desenvolvedor Front-end', 'text-emerald-300'], ["',", 'text-slate-500']] },
+    { indent: 1, tokens: [['cargo', 'text-slate-300'], [": '", 'text-slate-500'], ['Desenvolvedor Full Stack', 'text-emerald-300'], ["',", 'text-slate-500']] },
+    { indent: 1, tokens: [['formacao', 'text-slate-300'], [": '", 'text-slate-500'], ['Análise e Dev. de Sistemas', 'text-emerald-300'], ["',", 'text-slate-500']] },
     { indent: 1, tokens: [['foco', 'text-slate-300'], [': [', 'text-slate-400']] },
     { indent: 2, tokens: [["'", 'text-slate-500'], ['acessibilidade', 'text-emerald-300'], ["',", 'text-slate-500']] },
     { indent: 2, tokens: [["'", 'text-slate-500'], ['performance', 'text-emerald-300'], ["',", 'text-slate-500']] },
+    { indent: 2, tokens: [["'", 'text-slate-500'], ['automação', 'text-emerald-300'], ["',", 'text-slate-500']] },
     { indent: 2, tokens: [["'", 'text-slate-500'], ['código legível', 'text-emerald-300'], ["',", 'text-slate-500']] },
     { indent: 1, tokens: [['],', 'text-slate-400']] },
     { indent: 1, tokens: [['aberto', 'text-slate-300'], [': ', 'text-slate-400'], ['true', 'text-accent-300'], [',', 'text-slate-500']] },
