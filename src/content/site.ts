@@ -1,6 +1,6 @@
 /**
- * Dados do perfil. Ajuste os campos marcados com TODO com as suas
- * informações reais antes de enviar o portfólio para recrutadores.
+ * Dados do perfil. Os contatos abaixo são os reais; trocar qualquer
+ * informação pública significa editar apenas este arquivo.
  */
 
 export const site = {
@@ -14,9 +14,9 @@ export const site = {
   githubUrl: 'https://github.com/nicolasmoreiraferreira',
   portfolioUrl: 'https://nicolasmoreiraferreira.github.io/portfolio/',
 
-  // TODO: substitua pelos seus contatos reais.
-  email: 'nicolas.moreira.ferreira@email.com',
-  linkedinUrl: 'https://www.linkedin.com/in/seu-usuario/',
+  email: 'nikola.snay@hotmail.com',
+  linkedinUrl: 'https://www.linkedin.com/in/nicolas-snay-8448462a5/',
+  linkedinHandle: 'nicolas-snay',
 
   hero: {
     headline:

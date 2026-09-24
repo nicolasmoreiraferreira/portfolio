@@ -68,8 +68,8 @@ export function Contact() {
                   </span>
                   <span className="min-w-0">
                     <span className="block text-sm font-semibold text-slate-100">LinkedIn</span>
-                    <span className="block truncate text-sm text-slate-400">
-                      Perfil profissional
+                    <span className="block truncate font-mono text-sm text-slate-400">
+                      /in/{site.linkedinHandle}
                     </span>
                   </span>
                 </a>
