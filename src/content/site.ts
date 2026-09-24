@@ -60,7 +60,7 @@ export const site = {
     {
       title: 'Superior de Tecnologia em Análise e Desenvolvimento de Sistemas',
       institution: 'Cruzeiro do Sul — Graduação EAD',
-      period: '2026 — em andamento',
+      period: 'Desde 2026',
       description:
         'Graduação com foco em engenharia de software, estruturas de dados, banco de dados, redes e desenvolvimento de sistemas. Cursando em paralelo ao trabalho prático em projetos próprios.',
       current: true,
