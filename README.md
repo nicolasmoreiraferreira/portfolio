@@ -167,8 +167,12 @@ Distribuído sob a licença MIT. Consulte [LICENSE](LICENSE).
 ## Contato
 
 - **GitHub:** [@nicolasmoreiraferreira](https://github.com/nicolasmoreiraferreira)
-- **LinkedIn:** [Nicolas Moreira Ferreira](https://www.linkedin.com/in/seu-usuario/)
-- **E-mail:** nicolas.moreira.ferreira@email.com
+- **LinkedIn:** [linkedin.com/in/nicolas-snay-8448462a5](https://www.linkedin.com/in/nicolas-snay-8448462a5/)
+- **E-mail:** nikola.snay@hotmail.com
 
-> Substitua os dados de LinkedIn e e-mail acima pelos seus contatos reais antes de enviar o
-> repositório para um processo seletivo.
+## Documentação complementar
+
+- [Guia de entrevista](docs/GUIA-ENTREVISTA.md) — como apresentar o portfólio, pitch de 30 segundos,
+  perguntas prováveis e roteiro para compartilhamento de tela.
+- [Guia do LinkedIn](docs/GUIA-LINKEDIN.md) — configuração completa do perfil profissional, com
+  textos prontos para copiar.
