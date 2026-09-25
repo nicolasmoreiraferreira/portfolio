@@ -65,7 +65,8 @@ export function Projects() {
             <div>
               <h3 className="text-base font-semibold text-slate-100">Quer ver o código?</h3>
               <p className="mt-1 text-sm text-slate-400">
-                Os projetos de front-end estão públicos, com histórico de commits e README.
+                Os projetos de estudo estão públicos, com histórico de commits e README. Os sistemas em
+                produção têm a arquitetura documentada na vitrine técnica.
               </p>
             </div>
             <a
@@ -175,7 +176,7 @@ function ProjectCard({
               rel="noreferrer noopener"
               className="btn btn-ghost !px-3.5 !py-2 !text-[0.8rem]"
             >
-              Código
+              {project.private ? 'Vitrine técnica' : 'Código'}
             </a>
           ) : (
             <span className="chip !text-[0.72rem]" title="Projeto de código fechado">

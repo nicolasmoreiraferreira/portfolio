@@ -3,6 +3,8 @@
  * `cover` aponta para uma imagem em `public/covers/`.
  * `demoUrl` só existe quando o projeto está publicado e funcionando.
  * `private: true` indica projeto de código fechado, apresentado na conversa.
+ * Em projeto privado, `repoUrl` pode apontar para a vitrine técnica (README com
+ * arquitetura e capturas), nunca para o código-fonte.
  */
 
 export type ProjectCategory = 'Full Stack' | 'Front-end' | 'Responsivo' | 'JavaScript' | 'Back-end'
@@ -46,6 +48,7 @@ export const projects: Project[] = [
       'Mais de 130 testes automatizados, checagem de tipos e build a cada entrega',
     ],
     stack: ['React', 'TypeScript', 'tRPC', 'Drizzle ORM', 'MySQL', 'Node.js', 'Evolution API', 'Vitest'],
+    repoUrl: 'https://github.com/nicolasmoreiraferreira/controle-financeiro',
     demoUrl: 'https://controlefinanceirosnay.com',
     cover: 'covers/financeiro.png',
     accent: '#22d3ee',
