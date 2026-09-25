@@ -1,6 +1,6 @@
 import { site } from '../content/site'
 
-const stack = ['HTML5', 'CSS3', 'TypeScript', 'React', 'Node.js', 'Python', 'Playwright', 'Git']
+const stack = ['TypeScript', 'React', 'Node.js', 'tRPC', 'MySQL', 'Python', 'Playwright', 'Git']
 
 export function Hero() {
   return (
@@ -67,8 +67,9 @@ function HeroVisual() {
     { indent: 1, tokens: [['formacao', 'text-slate-300'], [": '", 'text-slate-500'], ['Análise e Dev. de Sistemas', 'text-emerald-300'], ["',", 'text-slate-500']] },
     { indent: 1, tokens: [['foco', 'text-slate-300'], [': [', 'text-slate-400']] },
     { indent: 2, tokens: [["'", 'text-slate-500'], ['acessibilidade', 'text-emerald-300'], ["',", 'text-slate-500']] },
-    { indent: 2, tokens: [["'", 'text-slate-500'], ['performance', 'text-emerald-300'], ["',", 'text-slate-500']] },
-    { indent: 2, tokens: [["'", 'text-slate-500'], ['automação', 'text-emerald-300'], ["',", 'text-slate-500']] },
+    { indent: 2, tokens: [["'", 'text-slate-500'], ['API tipada ponta a ponta', 'text-emerald-300'], ["',", 'text-slate-500']] },
+    { indent: 2, tokens: [["'", 'text-slate-500'], ['banco de dados relacional', 'text-emerald-300'], ["',", 'text-slate-500']] },
+    { indent: 2, tokens: [["'", 'text-slate-500'], ['automação de processos', 'text-emerald-300'], ["',", 'text-slate-500']] },
     { indent: 2, tokens: [["'", 'text-slate-500'], ['código legível', 'text-emerald-300'], ["',", 'text-slate-500']] },
     { indent: 1, tokens: [['],', 'text-slate-400']] },
     { indent: 1, tokens: [['aberto', 'text-slate-300'], [': ', 'text-slate-400'], ['true', 'text-accent-300'], [',', 'text-slate-500']] },

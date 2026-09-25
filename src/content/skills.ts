@@ -35,15 +35,20 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    title: 'Back-end & Automação',
-    description: 'O que roda nos bastidores: automação, integrações e dados.',
+    title: 'Back-end & Dados',
+    description: 'APIs, banco de dados e o que roda nos bastidores.',
     items: [
+      { name: 'Node.js (APIs e build)', level: 'Intermediário' },
+      { name: 'APIs tipadas com tRPC', level: 'Intermediário' },
+      { name: 'Banco de dados relacional (MySQL)', level: 'Intermediário' },
+      { name: 'Drizzle ORM e migrations', level: 'Intermediário' },
+      { name: 'Validação com Zod', level: 'Intermediário' },
+      { name: 'Testes automatizados (Vitest)', level: 'Intermediário' },
       { name: 'Python', level: 'Intermediário' },
       { name: 'Playwright (automação de navegador)', level: 'Intermediário' },
       { name: 'Concorrência com threads', level: 'Intermediário' },
       { name: 'Persistência de estado em JSON', level: 'Intermediário' },
       { name: 'Integração de APIs HTTP', level: 'Intermediário' },
-      { name: 'Node.js / npm (build e scripts)', level: 'Intermediário' },
     ],
   },
   {

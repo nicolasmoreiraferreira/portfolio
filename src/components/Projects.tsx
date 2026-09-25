@@ -3,7 +3,7 @@ import { projects, type Project } from '../content/projects'
 import { Reveal } from './Reveal'
 import { SectionHeading } from './SectionHeading'
 
-const filters = ['Todos', 'Back-end', 'Front-end', 'Responsivo', 'JavaScript'] as const
+const filters = ['Todos', 'Full Stack', 'Back-end', 'Front-end', 'Responsivo', 'JavaScript'] as const
 type Filter = (typeof filters)[number]
 
 export function Projects() {
@@ -21,7 +21,7 @@ export function Projects() {
         <SectionHeading
           eyebrow="Projetos"
           title="O que eu construí e o que aprendi construindo"
-          description="Sete projetos entre front-end e back-end. Seis têm código aberto e cinco estão publicados para abrir agora no navegador. O projeto de automação é de código fechado — apresento a arquitetura e as decisões na conversa."
+          description="Nove projetos, do front-end ao sistema completo em produção. Os projetos de estudo têm código aberto; os sistemas em uso por clientes são de código fechado — apresento a arquitetura e as decisões na conversa."
         />
 
         <div className="mb-10 flex flex-wrap gap-2" role="group" aria-label="Filtrar projetos por categoria">

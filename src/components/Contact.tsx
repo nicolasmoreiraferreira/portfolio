@@ -9,7 +9,7 @@ export function Contact() {
         <SectionHeading
           eyebrow="Contato"
           title="Vamos conversar sobre a sua vaga"
-          description="Estou disponível para posições de desenvolvimento full stack, front-end ou back-end — estágio e júnior, em São Paulo ou remoto."
+          description="Estou disponível para posições de desenvolvimento full stack, front-end ou back-end — estágio e júnior, na Baixada Santista, em São Paulo capital ou remoto."
         />
 
         <div className="grid gap-6 lg:grid-cols-[1fr_1.1fr]">
@@ -85,8 +85,8 @@ export function Contact() {
                   'Posição de desenvolvedor full stack, front-end ou back-end.',
                   'Nível estágio ou júnior — primeira oportunidade profissional.',
                   'Time com revisão de código e feedback técnico estruturado.',
-                  'Projetos em que eu possa evoluir de HTML/CSS/JS para React, Node.js e Python.',
-                  'Modelo presencial em São Paulo, híbrido ou remoto.',
+                  'Projetos em que eu possa evoluir de React e TypeScript para sistemas cada vez maiores.',
+                  'Modelo presencial na Baixada Santista ou São Paulo capital, híbrido ou remoto.',
                 ].map((item) => (
                   <li key={item} className="flex gap-3">
                     <svg viewBox="0 0 24 24" className="mt-0.5 size-4 shrink-0 text-accent-400" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

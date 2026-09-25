@@ -5,7 +5,7 @@
  * `private: true` indica projeto de código fechado, apresentado na conversa.
  */
 
-export type ProjectCategory = 'Front-end' | 'Responsivo' | 'JavaScript' | 'Back-end'
+export type ProjectCategory = 'Full Stack' | 'Front-end' | 'Responsivo' | 'JavaScript' | 'Back-end'
 
 export type Project = {
   slug: string
@@ -27,6 +27,33 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: 'controle-financeiro',
+    title: 'Controle Financeiro — Painel Web',
+    category: 'Full Stack',
+    summary:
+      'Painel financeiro em produção que começou como controle pessoal e hoje atende clientes convidados, com dados isolados por conta.',
+    problem:
+      'Manter a vida financeira sob controle — contas fixas, cartões de crédito, orçamentos, metas e patrimônio — sem lançar tudo à mão, e ainda permitir que outras pessoas usem o mesmo sistema sem enxergar os dados de ninguém.',
+    solution:
+      'Aplicação web com front-end em React 19 e TypeScript e API tipada ponta a ponta com tRPC sobre Express, persistindo em MySQL via Drizzle ORM. O lançamento do dia a dia acontece por mensagem de WhatsApp: um webhook recebe o texto, interpreta valor, categoria e cartão, e grava a transação. A gravação é idempotente por identificador de mensagem, então reenvio ou resposta automática do próprio bot não gera lançamento duplicado, e um detector de duplicidades cruza manual, WhatsApp e planilha em modo somente leitura. Cada conta tem seus próprios dados: o convite é nominal, o primeiro acesso começa com painel vazio e credenciais de sincronização próprias.',
+    highlights: [
+      'API tipada ponta a ponta com tRPC, Zod e TypeScript estrito',
+      'Lançamento por WhatsApp: parser de mensagem com idempotência por identificador único',
+      'Isolamento de dados por conta, com convite nominal e onboarding próprio do convidado',
+      'Central de cartões com ciclo de fatura, parcelas e contas fixas vinculadas',
+      'Detector de possíveis duplicidades entre manual, WhatsApp e planilha, sem ação automática',
+      'Patrimônio e backup com restauração validada e confirmação explícita',
+      'Mais de 130 testes automatizados, checagem de tipos e build a cada entrega',
+    ],
+    stack: ['React', 'TypeScript', 'tRPC', 'Drizzle ORM', 'MySQL', 'Node.js', 'Evolution API', 'Vitest'],
+    demoUrl: 'https://controlefinanceirosnay.com',
+    cover: 'covers/financeiro.png',
+    accent: '#22d3ee',
+    year: '2026',
+    private: true,
+    featured: true,
+  },
+  {
     slug: 'botsnay',
     title: 'BOTSNAY — Plataforma de Automação',
     category: 'Back-end',
@@ -47,6 +74,30 @@ export const projects: Project[] = [
     stack: ['Python', 'Playwright', 'Tkinter / ttkbootstrap', 'Threading', 'JSON', 'REST APIs', 'CI/CD'],
     cover: 'covers/botsnay.svg',
     accent: '#3776ab',
+    year: '2026',
+    private: true,
+    featured: true,
+  },
+  {
+    slug: 'convite-ravi',
+    title: 'Convite Digital com RSVP',
+    category: 'Full Stack',
+    summary:
+      'Site de evento com contagem regressiva, detalhes, confirmação de presença online e painel do dono para acompanhar a lista.',
+    problem:
+      'Convidar dezenas de famílias para uma festa e ainda saber, sem planilha paralela e sem contar mensagem por mensagem, quem confirmou e quantos adultos e crianças vêm.',
+    solution:
+      'Aplicação web com front-end em React e TypeScript e back-end com procedimentos tipados sobre banco de dados. O convidado vê a contagem regressiva para o evento, horário, local e o formulário de confirmação; o registro separa adultos de crianças e é validado no servidor. O painel do dono consolida as confirmações em totais, permite incluir convidados manualmente e controla o prazo — quando o prazo fecha, o site passa a orientar o convidado a falar com o responsável em vez de aceitar novos registros.',
+    highlights: [
+      'Contagem regressiva em tempo real para a data do evento',
+      'RSVP com separação entre adultos e crianças e validação no servidor',
+      'Painel do dono com totais consolidados e inclusão manual de convidados',
+      'Controle de prazo: encerra a confirmação automática e orienta o convidado',
+      'Responsivo do celular ao desktop, seguindo a identidade visual do convite',
+    ],
+    stack: ['React', 'TypeScript', 'Node.js', 'Banco de dados', 'RSVP'],
+    cover: 'covers/ravi.png',
+    accent: '#fb923c',
     year: '2026',
     private: true,
     featured: true,

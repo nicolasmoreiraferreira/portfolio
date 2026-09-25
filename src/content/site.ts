@@ -7,7 +7,7 @@ export const site = {
   name: 'Nicolas Moreira Ferreira',
   role: 'Desenvolvedor Full Stack',
   stackLine: 'Front-end · Back-end · Automação',
-  location: 'São Paulo, Brasil',
+  location: 'São Vicente, SP',
   availableForWork: true,
 
   githubUser: 'nicolasmoreiraferreira',
@@ -22,12 +22,12 @@ export const site = {
     headline:
       'Interfaces que carregam rápido e sistemas que trabalham sozinhos nos bastidores.',
     summary:
-      'Sou desenvolvedor full stack em São Paulo. Construo interfaces web com HTML semântico, CSS moderno, JavaScript/TypeScript e React, e desenvolvo as automações e integrações em Python que fazem o trabalho pesado rodar de forma confiável.',
+      'Sou desenvolvedor full stack em São Vicente (Baixada Santista, SP). Construo interfaces web com HTML semântico, CSS moderno, JavaScript/TypeScript e React, e desenvolvo o back-end — APIs, banco de dados, automações e integrações em Python e Node.js — que faz o trabalho pesado rodar de forma confiável.',
   },
 
   about: [
     'Comecei na programação pelo caminho clássico: HTML5 e CSS3, depois JavaScript, construindo cada projeto do zero para entender o que acontece por baixo do framework. Essa base é o que me permite hoje debugar layout, acessibilidade e performance com segurança, em vez de apenas aplicar receitas prontas.',
-    'Do lado do back-end, desenvolvo em Python e Node.js. Mantenho um sistema de automação de processos web em produção, com mais de 190 módulos, orquestração de sessões de navegador, persistência de estado, empacotamento para Windows e pipeline de releases versionadas rodando em GitHub Actions. Trabalhar nesse projeto me ensinou na prática o que é arquitetura concorrente, idempotência de operações e tratamento de falha parcial — problemas que não aparecem em exercícios de curso.',
+    'Hoje mantenho em produção um painel financeiro web que começou como controle pessoal e passou a atender clientes convidados: React e TypeScript na interface, API tipada ponta a ponta com tRPC, MySQL via Drizzle ORM, lançamentos por WhatsApp com gravação idempotente e isolamento de dados por conta. Também mantenho um sistema de automação de processos web com mais de 190 módulos em Python, orquestração de sessões de navegador, persistência de estado e pipeline de releases versionadas em GitHub Actions. Trabalhar nesses projetos me ensinou na prática o que é arquitetura concorrente, idempotência de operações, isolamento de dados e tratamento de falha parcial — problemas que não aparecem em exercícios de curso.',
     'Estou cursando o Superior de Tecnologia em Análise e Desenvolvimento de Sistemas na Cruzeiro do Sul (EAD), o que dá base formal para o que já venho aplicando na prática: estruturas de dados, engenharia de software, banco de dados e redes.',
     'Busco minha primeira oportunidade profissional como desenvolvedor — front-end, back-end ou full stack — em um time onde eu possa contribuir com entrega de qualidade e evoluir com feedback técnico.',
   ],
@@ -36,17 +36,17 @@ export const site = {
     {
       title: 'Front-end com fundamentos',
       description:
-        'Seis projetos públicos construídos manualmente em HTML, CSS e JavaScript — sem depender de geradores de layout.',
+        'Projetos públicos construídos manualmente em HTML, CSS e JavaScript, além de interfaces em React e TypeScript — sem depender de geradores de layout.',
     },
     {
-      title: 'Back-end e automação em Python',
+      title: 'Sistemas em produção',
       description:
-        'Sistema desktop em produção com 190+ módulos, Playwright, concorrência com threads e persistência de estado.',
+        'Painel financeiro web com API tipada, banco de dados e integração com WhatsApp, além de sistema desktop em Python com 190+ módulos.',
     },
     {
       title: 'Entrega com qualidade',
       description:
-        'TypeScript estrito, ESLint, testes de regressão e pipelines de CI que barram código quebrado antes da publicação.',
+        'TypeScript estrito, ESLint, mais de 130 testes automatizados e pipelines de CI que barram código quebrado antes da publicação.',
     },
     {
       title: 'Formação e método',
