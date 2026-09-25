@@ -2,7 +2,7 @@
 
 # Portfólio — Nicolas Moreira Ferreira
 
-**Desenvolvedor Front-end · São Paulo, Brasil**
+**Desenvolvedor Full Stack · São Vicente, SP, Brasil**
 
 Site pessoal que reúne meus projetos, habilidades e formas de contato.
 Construído do zero com React, TypeScript, Vite e Tailwind CSS, com deploy automático no GitHub Pages.
@@ -33,7 +33,7 @@ de forma consciente e está documentada abaixo.
 | Início | Apresentação, área de atuação e stack principal |
 | Sobre | Trajetória, princípios de trabalho e diferenciais |
 | Habilidades | Competências agrupadas por área, com nível declarado |
-| Projetos | Seis projetos com filtro por categoria, capturas reais e detalhes técnicos |
+| Projetos | Nove projetos com filtro por categoria, capturas reais e detalhes técnicos |
 | Formação | Cursos, estudos em andamento e números do percurso |
 | Contato | E-mail, GitHub e LinkedIn, além do que busco profissionalmente |
 
@@ -51,6 +51,9 @@ Escolhas que valem ser explicadas em uma entrevista:
   com respeito a `prefers-reduced-motion` e degradação para conteúdo sempre visível.
 - **Capturas reais dos projetos.** As imagens em `public/covers/` foram geradas por script a partir
   dos sites publicados, em vez de mockups genéricos.
+- **Projetos privados com vitrine técnica.** Sistemas em produção com dados de clientes não expõem
+  código. O card aponta para um repositório de documentação — arquitetura, decisões e capturas — e
+  nunca para o código-fonte.
 - **Acessibilidade como requisito.** Idioma declarado, landmarks, atributo `alt` descritivo,
   link de "pular para o conteúdo", navegação por teclado com foco visível, `aria-expanded`/
   `aria-pressed`/`aria-current` nos controles e contraste verificado.
