@@ -15,8 +15,8 @@ export const site = {
   portfolioUrl: 'https://nicolasmoreiraferreira.github.io/portfolio/',
 
   email: 'nikola.snay@hotmail.com',
-  linkedinUrl: 'https://www.linkedin.com/in/nicolas-snay-8448462a5/',
-  linkedinHandle: 'nicolas-snay',
+  linkedinUrl: 'https://www.linkedin.com/in/nicolasmoreiraferreira/',
+  linkedinHandle: 'nicolasmoreiraferreira',
 
   hero: {
     headline:

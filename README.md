@@ -167,5 +167,5 @@ Distribuído sob a licença MIT. Consulte [LICENSE](LICENSE).
 ## Contato
 
 - **GitHub:** [@nicolasmoreiraferreira](https://github.com/nicolasmoreiraferreira)
-- **LinkedIn:** [linkedin.com/in/nicolas-snay-8448462a5](https://www.linkedin.com/in/nicolas-snay-8448462a5/)
+- **LinkedIn:** [linkedin.com/in/nicolasmoreiraferreira](https://www.linkedin.com/in/nicolasmoreiraferreira/)
 - **E-mail:** nikola.snay@hotmail.com
