@@ -41,3 +41,6 @@ lerna-debug.log*
 
 # TypeScript
 *.tsbuildinfo
+
+# Material de preparação pessoal (não publicar)
+docs/
