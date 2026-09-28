@@ -29,6 +29,31 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: 'estados',
+    title: 'Estados — Laboratório de Estados de Interface',
+    category: 'Front-end',
+    summary:
+      'Aplicação de código aberto que força doze condições reais de API — erro, sessão expirada, sem permissão, dado corrompido, cinco mil registros — para verificar como cada tela se comporta.',
+    problem:
+      'Quase todo bug de interface nasce no caminho que ninguém testa: o momento em que a requisição falha, a sessão expira, a rede cai ou o dado chega vazio. Esses estados costumam ser descobertos pelo usuário, em produção, porque não existe uma forma simples de provocá-los durante o desenvolvimento.',
+    solution:
+      'Aplicação React 19 com TypeScript em modo estrito onde a condição de API não é simulada por teste, e sim parte da aplicação: um painel escolhe a condição e todas as telas passam a responder sob aquele regime, com o endereço da URL guardando a escolha para que qualquer estado seja compartilhável por link. Um renderizador único de consulta obriga toda tela a tratar carregamento, erro e vazio — não existe caminho no código para exibir conteúdo sem passar por esses três estados. A lista de volume usa virtualização para manter apenas 20 linhas no DOM de 5.004 registros, e a suíte cobre o comportamento em desktop e celular.',
+    highlights: [
+      'Doze condições reais de API, escolhidas por painel e guardadas na URL',
+      'Renderizador único que impede exibir conteúdo sem tratar carregamento, erro e vazio',
+      'Virtualização de lista: 20 linhas no DOM de 5.004 registros',
+      '175 testes automatizados — 103 unitários e 72 de navegador (Playwright)',
+      'Reautenticação, permissão e erro de servidor tratados como fluxo, não como exceção',
+      'Código aberto, com CI publicando a demonstração a cada push',
+    ],
+    stack: ['React 19', 'TypeScript', 'Vite', 'Tailwind CSS', 'Vitest', 'Playwright', 'Acessibilidade'],
+    repoUrl: 'https://github.com/nicolasmoreiraferreira/estados',
+    cover: 'covers/estados.svg',
+    accent: '#38bdf8',
+    year: '2026',
+    featured: true,
+  },
+  {
     slug: 'controle-financeiro',
     title: 'Controle Financeiro — Painel Web',
     category: 'Full Stack',
