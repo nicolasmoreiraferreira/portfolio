@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Capa do projeto Guardrails para Agentes de IA: três camadas de controle que bloqueiam escrita em caminhos sensíveis, validam cada saída e exigem veredito de revisores independentes">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0814"/>
+      <stop offset="55%" stop-color="#120c26"/>
+      <stop offset="100%" stop-color="#0b0a1c"/>
+    </linearGradient>
+    <linearGradient id="titles" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#231d3d"/>
+      <stop offset="100%" stop-color="#1a1530"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#94a3b8" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#grid)"/>
+  <circle cx="1000" cy="150" r="340" fill="url(#glow)"/>
+
+  <!-- Painel principal -->
+  <rect x="90" y="86" width="1020" height="534" rx="16" fill="#0c0a1a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.2"/>
+  <rect x="90" y="86" width="1020" height="46" rx="16" fill="url(#titles)"/>
+  <rect x="90" y="118" width="1020" height="14" fill="url(#titles)"/>
+  <circle cx="122" cy="109" r="7" fill="#fb7185" fill-opacity="0.75"/>
+  <circle cx="146" cy="109" r="7" fill="#fbbf24" fill-opacity="0.75"/>
+  <circle cx="170" cy="109" r="7" fill="#34d399" fill-opacity="0.75"/>
+  <text x="202" y="115" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="15" fill="#8b93ab">ia-guardrails — .claude/hooks e revisores</text>
+
+  <!-- Camada 1 -->
+  <rect x="120" y="160" width="960" height="110" rx="12" fill="#141029" fill-opacity="0.9" stroke="#a78bfa" stroke-opacity="0.28"/>
+  <circle cx="158" cy="215" r="22" fill="#a78bfa" fill-opacity="0.18" stroke="#a78bfa" stroke-opacity="0.5"/>
+  <text x="158" y="222" text-anchor="middle" font-family="Inter, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#c4b5fd">1</text>
+  <text x="198" y="205" font-family="Inter, 'Segoe UI', sans-serif" font-size="21" font-weight="600" fill="#e2e8f0">Bloqueio na entrada</text>
+  <text x="198" y="236" font-family="Inter, 'Segoe UI', sans-serif" font-size="15" fill="#8fa0b8">Escrita em .env, .git, backups, sessões, perfis e credenciais é recusada antes de acontecer</text>
+  <rect x="866" y="188" width="186" height="38" rx="19" fill="#a78bfa" fill-opacity="0.16" stroke="#a78bfa" stroke-opacity="0.45"/>
+  <text x="959" y="213" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="16" fill="#c4b5fd">PreToolUse</text>
+
+  <!-- Camada 2 -->
+  <rect x="120" y="290" width="960" height="110" rx="12" fill="#141029" fill-opacity="0.9" stroke="#a78bfa" stroke-opacity="0.28"/>
+  <circle cx="158" cy="345" r="22" fill="#a78bfa" fill-opacity="0.18" stroke="#a78bfa" stroke-opacity="0.5"/>
+  <text x="158" y="352" text-anchor="middle" font-family="Inter, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#c4b5fd">2</text>
+  <text x="198" y="335" font-family="Inter, 'Segoe UI', sans-serif" font-size="21" font-weight="600" fill="#e2e8f0">Validação na saída</text>
+  <text x="198" y="366" font-family="Inter, 'Segoe UI', sans-serif" font-size="15" fill="#8fa0b8">Varredura de segredos no conteúdo, nomes proibidos e versão — escrita reprovada é revertida</text>
+  <rect x="866" y="318" width="186" height="38" rx="19" fill="#a78bfa" fill-opacity="0.16" stroke="#a78bfa" stroke-opacity="0.45"/>
+  <text x="959" y="343" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="16" fill="#c4b5fd">PostToolUse</text>
+
+  <!-- Camada 3 -->
+  <rect x="120" y="420" width="960" height="110" rx="12" fill="#141029" fill-opacity="0.9" stroke="#a78bfa" stroke-opacity="0.28"/>
+  <circle cx="158" cy="475" r="22" fill="#a78bfa" fill-opacity="0.18" stroke="#a78bfa" stroke-opacity="0.5"/>
+  <text x="158" y="482" text-anchor="middle" font-family="Inter, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#c4b5fd">3</text>
+  <text x="198" y="465" font-family="Inter, 'Segoe UI', sans-serif" font-size="21" font-weight="600" fill="#e2e8f0">Revisores independentes</text>
+  <text x="198" y="496" font-family="Inter, 'Segoe UI', sans-serif" font-size="15" fill="#8fa0b8">Dois subagentes somente-leitura, obrigados a terminar com um veredito explícito</text>
+  <rect x="866" y="448" width="186" height="38" rx="19" fill="#34d399" fill-opacity="0.14" stroke="#34d399" stroke-opacity="0.5"/>
+  <text x="959" y="473" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="16" fill="#6ee7b7">APROVAR</text>
+
+  <!-- Selo de bloqueio -->
+  <rect x="828" y="560" width="252" height="42" rx="21" fill="#fb7185" fill-opacity="0.13" stroke="#fb7185" stroke-opacity="0.45"/>
+  <circle cx="856" cy="581" r="7" fill="#fb7185"/>
+  <text x="876" y="587" font-family="Inter, 'Segoe UI', sans-serif" font-size="15" fill="#fda4af">hook bloqueia a chamada</text>
+
+  <!-- Etiqueta inferior -->
+  <rect x="120" y="656" width="470" height="46" rx="23" fill="#a78bfa" fill-opacity="0.16" stroke="#a78bfa" stroke-opacity="0.5"/>
+  <text x="152" y="686" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="19" fill="#c4b5fd">Python · Hooks · IA aplicada</text>
+  <text x="1080" y="686" text-anchor="end" font-family="Inter, 'Segoe UI', sans-serif" font-size="16" fill="#8fa0b8">Código aberto · MIT</text>
+</svg>

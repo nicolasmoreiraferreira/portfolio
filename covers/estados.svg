@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Capa do projeto Estados: aplicação React que exibe os estados de carregamento, erro, vazio e dado em volume">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d16"/>
+      <stop offset="55%" stop-color="#0b1524"/>
+      <stop offset="100%" stop-color="#08131c"/>
+    </linearGradient>
+    <linearGradient id="titles" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b2740"/>
+      <stop offset="100%" stop-color="#141c30"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#94a3b8" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#grid)"/>
+  <circle cx="1010" cy="140" r="330" fill="url(#glow)"/>
+
+  <!-- Janela do navegador -->
+  <rect x="110" y="88" width="980" height="574" rx="16" fill="#0b1020" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.2"/>
+  <rect x="110" y="88" width="980" height="46" rx="16" fill="url(#titles)"/>
+  <rect x="110" y="120" width="980" height="14" fill="url(#titles)"/>
+  <circle cx="142" cy="111" r="7" fill="#fb7185" fill-opacity="0.75"/>
+  <circle cx="166" cy="111" r="7" fill="#fbbf24" fill-opacity="0.75"/>
+  <circle cx="190" cy="111" r="7" fill="#4ade80" fill-opacity="0.75"/>
+
+  <!-- Barra de endereço com o parâmetro que força a condição -->
+  <rect x="220" y="100" width="560" height="24" rx="12" fill="#0a0f1c" stroke="#94a3b8" stroke-opacity="0.18"/>
+  <text x="240" y="117" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#7dd3fc" fill-opacity="0.85">estados/#/pedidos?condicao=erro-servidor</text>
+
+  <!-- Painel de condições à esquerda -->
+  <rect x="146" y="164" width="250" height="462" rx="12" fill="#0d1424" stroke="#94a3b8" stroke-opacity="0.16"/>
+  <text x="170" y="196" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="700" fill="#cbd5e1">Condições</text>
+
+  <!-- Lista de condições: a ativa destacada -->
+  <rect x="162" y="212" width="218" height="34" rx="8" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-opacity="0.5"/>
+  <circle cx="182" cy="229" r="5" fill="#38bdf8"/>
+  <text x="198" y="234" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#e0f2fe">Erro no servidor</text>
+
+  <circle cx="182" cy="273" r="5" fill="#94a3b8" fill-opacity="0.5"/>
+  <text x="198" y="278" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#94a3b8">Sessão expirada</text>
+
+  <circle cx="182" cy="317" r="5" fill="#94a3b8" fill-opacity="0.5"/>
+  <text x="198" y="322" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#94a3b8">Sem permissão</text>
+
+  <circle cx="182" cy="361" r="5" fill="#94a3b8" fill-opacity="0.5"/>
+  <text x="198" y="366" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#94a3b8">Sem conexão</text>
+
+  <circle cx="182" cy="405" r="5" fill="#94a3b8" fill-opacity="0.5"/>
+  <text x="198" y="410" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#94a3b8">Dado corrompido</text>
+
+  <circle cx="182" cy="449" r="5" fill="#94a3b8" fill-opacity="0.5"/>
+  <text x="198" y="454" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#94a3b8">Cinco mil registros</text>
+
+  <circle cx="182" cy="493" r="5" fill="#94a3b8" fill-opacity="0.5"/>
+  <text x="198" y="498" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#94a3b8">Lista vazia</text>
+
+  <!-- Área de conteúdo: o estado de erro renderizado -->
+  <rect x="420" y="164" width="636" height="462" rx="12" fill="#0d1424" stroke="#94a3b8" stroke-opacity="0.16"/>
+
+  <!-- Cartão de erro -->
+  <rect x="470" y="268" width="536" height="254" rx="12" fill="#131a2b" stroke="#fb7185" stroke-opacity="0.35"/>
+  <circle cx="738" cy="318" r="26" fill="#fb7185" fill-opacity="0.14"/>
+  <text x="738" y="328" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="26" font-weight="700" fill="#fb7185">!</text>
+
+  <text x="738" y="374" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="19" font-weight="700" fill="#f1f5f9">Não foi possível carregar os pedidos</text>
+  <text x="738" y="400" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#94a3b8">O servidor respondeu com erro 500.</text>
+  <text x="738" y="420" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#94a3b8">Tentar de novo em alguns segundos costuma resolver.</text>
+
+  <rect x="642" y="444" width="192" height="42" rx="8" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-opacity="0.55"/>
+  <text x="738" y="470" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="600" fill="#7dd3fc">Tentar novamente</text>
+
+  <!-- Rodapé: o endereço compartilhável de cada estado -->
+  <text x="470" y="568" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#64748b">Cada condição tem endereço próprio e pode ser compartilhada em link.</text>
+
+  <!-- Marca -->
+  <text x="146" y="700" font-family="ui-sans-serif, system-ui, sans-serif" font-size="30" font-weight="700" fill="#e2e8f0">Estados</text>
+  <text x="284" y="700" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" fill="#7dd3fc">laboratório de estados de interface</text>
+  <text x="1090" y="700" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" fill="#64748b">React 19 · TypeScript · 175 testes</text>
+</svg>
