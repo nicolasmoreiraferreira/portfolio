@@ -7,7 +7,7 @@
  * arquitetura e capturas), nunca para o código-fonte.
  */
 
-export type ProjectCategory = 'Full Stack' | 'Front-end' | 'Responsivo' | 'JavaScript' | 'Back-end'
+export type ProjectCategory = 'IA' | 'Full Stack' | 'Front-end' | 'Responsivo' | 'JavaScript' | 'Back-end'
 
 export type Project = {
   slug: string
@@ -51,6 +51,31 @@ export const projects: Project[] = [
     demoUrl: 'https://nicolasmoreiraferreira.github.io/estados/',
     cover: 'covers/estados.svg',
     accent: '#38bdf8',
+    year: '2026',
+    featured: true,
+  },
+  {
+    slug: 'ia-guardrails',
+    title: 'Guardrails para Agentes de IA',
+    category: 'IA',
+    summary:
+      'Camada de controle que permite a um agente de IA escrever código em um sistema em produção sem acesso a credenciais, dados de clientes, sessões de navegador ou arquivos de operação.',
+    problem:
+      'Um agente de IA é útil justamente porque é autônomo: ele lê o repositório, decide o que mudar e escreve. A mesma autonomia que o torna útil o torna perigoso em um sistema que lida com dinheiro e dados pessoais. Ele encontra arquivos de configuração, listas de CPF, tokens de integração e perfis de sessão — e, tentando resolver a tarefa, tenta editá-los. Ao ler configuração para entender o sistema, pode carregar um segredo para dentro de um teste, de um comentário ou de um arquivo de exemplo. Instruir no prompt ("nunca edite o .env") é sugestão, não garantia.',
+    solution:
+      'Cada regra virou código que roda antes e depois de cada escrita do agente, em três camadas. Na entrada, um hook PreToolUse intercepta toda tentativa de Write, Edit, MultiEdit ou NotebookEdit e recusa a chamada quando o caminho está nas listas de bloqueio: arquivos exatos (.env, configurações locais, listas de CPF, tokens), diretórios (.git, backups, logs, sessions, profiles, browser_profiles) e extensões de risco (.db, .sqlite, .har, .key, .pem, .p12, .xls, .zip). Na saída, cada escrita aprovada passa por varredura do conteúdo — token do GitHub, chave no padrão OpenAI, chave da AWS, chave privada, credenciais embutidas em URL — e a escrita é revertida se algo for encontrado. No fechamento, dois subagentes somente-leitura auditam a mudança e são obrigados a terminar com um veredito explícito, APROVAR ou BLOQUEAR, sem repetir no relatório o valor de nenhum segredo encontrado. O recorte é funcional e sanitizado do que roda em um sistema real com usuários ativos.',
+    highlights: [
+      'Hook PreToolUse que bloqueia a escrita antes que aconteça, não depois',
+      'Listas de bloqueio por arquivo, diretório, extensão e fragmento de nome',
+      'Varredura de segredos no conteúdo, com reversão da escrita reprovada',
+      'Dois revisores somente-leitura obrigados a emitir APROVAR ou BLOQUEAR',
+      'Hook pre-push que impede o envio quando a barreira crítica falha',
+      'Guardrail tratado como código — prompt é sugestão, hook é barreira',
+    ],
+    stack: ['Python', 'Claude Code', 'Hooks', 'Segurança', 'Git', 'CI/CD'],
+    repoUrl: 'https://github.com/nicolasmoreiraferreira/ia-guardrails',
+    cover: 'covers/ia-guardrails.svg',
+    accent: '#a78bfa',
     year: '2026',
     featured: true,
   },

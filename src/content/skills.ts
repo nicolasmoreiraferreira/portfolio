@@ -68,8 +68,9 @@ export const skillGroups: SkillGroup[] = [
     items: [
       { name: 'Pensamento computacional e lógica de algoritmos', level: 'Intermediário' },
       { name: 'Fundamentos de hardware e software', level: 'Intermediário' },
+      { name: 'Guardrails para agentes de IA (hooks e revisão)', level: 'Intermediário' },
+      { name: 'Uso ético de IA no desenvolvimento', level: 'Intermediário' },
       { name: 'Arquitetura de internet e computação em nuvem', level: 'Estudo' },
-      { name: 'Uso ético de IA no desenvolvimento', level: 'Estudo' },
     ],
   },
 ]

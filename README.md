@@ -33,7 +33,7 @@ de forma consciente e está documentada abaixo.
 | Início | Apresentação, área de atuação e stack principal |
 | Sobre | Trajetória, princípios de trabalho e diferenciais |
 | Habilidades | Competências agrupadas por área, com nível declarado |
-| Projetos | Dez projetos com filtro por categoria, capturas reais e detalhes técnicos |
+| Projetos | Onze projetos com filtro por categoria — incluindo uma categoria de IA aplicada —, capturas reais e detalhes técnicos |
 | Formação | Graduação, cursos, certificações com código de autenticação e números do percurso |
 | Contato | E-mail, GitHub e LinkedIn, além do que busco profissionalmente |
 

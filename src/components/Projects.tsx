@@ -3,7 +3,7 @@ import { projects, type Project } from '../content/projects'
 import { Reveal } from './Reveal'
 import { SectionHeading } from './SectionHeading'
 
-const filters = ['Todos', 'Full Stack', 'Back-end', 'Front-end', 'Responsivo', 'JavaScript'] as const
+const filters = ['Todos', 'IA', 'Full Stack', 'Back-end', 'Front-end', 'Responsivo', 'JavaScript'] as const
 type Filter = (typeof filters)[number]
 
 export function Projects() {
