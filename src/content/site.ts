@@ -75,6 +75,28 @@ export const site = {
     },
   ],
 
+  // Certificações e badges com código de autenticação verificável.
+  // Listar aqui só o que foi efetivamente emitido, com carga horária real.
+  certifications: [
+    {
+      title: 'Explorador do Universo Digital e IA',
+      issuer: 'Universidade Cruzeiro do Sul',
+      workload: '4h',
+      period: 'Out 2026',
+      description:
+        'Badge emitida pela universidade ao concluir o curso da graduação: base conceitual de hardware e software, algoritmos e lógica condicional, funcionamento da internet e da computação em nuvem, além do uso ético e proativo de ferramentas de IA. Sem data de expiração.',
+      skills: [
+        'Pensamento Computacional',
+        'Fundamentos de Hardware e Software',
+        'Lógica de Algoritmo',
+        'Arquitetura de Internet e Nuvem',
+        'Ética em Inteligência Artificial',
+        'Literacia Informacional',
+      ],
+      credentialId: 'a2fb632a-1477-480f-9cec-05a4f753d802',
+    },
+  ],
+
   // Valores usados na seção "Como eu trabalho"
   principles: [
     'Entender o problema antes de escrever a primeira linha de código.',

@@ -21,7 +21,7 @@ export function Projects() {
         <SectionHeading
           eyebrow="Projetos"
           title="O que eu construí e o que aprendi construindo"
-          description="Nove projetos, do front-end ao sistema completo em produção. Os projetos de estudo têm código aberto; os sistemas em uso por clientes são de código fechado — apresento a arquitetura e as decisões na conversa."
+          description={`${projects.length} projetos, do front-end ao sistema completo em produção. Os projetos de estudo têm código aberto; os sistemas em uso por clientes são de código fechado — apresento a arquitetura e as decisões na conversa.`}
         />
 
         <div className="mb-10 flex flex-wrap gap-2" role="group" aria-label="Filtrar projetos por categoria">

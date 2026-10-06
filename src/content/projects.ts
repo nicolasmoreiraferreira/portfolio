@@ -48,6 +48,7 @@ export const projects: Project[] = [
     ],
     stack: ['React 19', 'TypeScript', 'Vite', 'Tailwind CSS', 'Vitest', 'Playwright', 'Acessibilidade'],
     repoUrl: 'https://github.com/nicolasmoreiraferreira/estados',
+    demoUrl: 'https://nicolasmoreiraferreira.github.io/estados/',
     cover: 'covers/estados.svg',
     accent: '#38bdf8',
     year: '2026',

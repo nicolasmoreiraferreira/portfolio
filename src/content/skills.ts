@@ -62,4 +62,14 @@ export const skillGroups: SkillGroup[] = [
       { name: 'ESLint', level: 'Intermediário' },
     ],
   },
+  {
+    title: 'Fundamentos & IA',
+    description: 'Base conceitual da formação acadêmica, com nível declarado pelo que já pratiquei.',
+    items: [
+      { name: 'Pensamento computacional e lógica de algoritmos', level: 'Intermediário' },
+      { name: 'Fundamentos de hardware e software', level: 'Intermediário' },
+      { name: 'Arquitetura de internet e computação em nuvem', level: 'Estudo' },
+      { name: 'Uso ético de IA no desenvolvimento', level: 'Estudo' },
+    ],
+  },
 ]

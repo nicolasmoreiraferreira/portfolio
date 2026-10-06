@@ -33,8 +33,8 @@ de forma consciente e está documentada abaixo.
 | Início | Apresentação, área de atuação e stack principal |
 | Sobre | Trajetória, princípios de trabalho e diferenciais |
 | Habilidades | Competências agrupadas por área, com nível declarado |
-| Projetos | Nove projetos com filtro por categoria, capturas reais e detalhes técnicos |
-| Formação | Cursos, estudos em andamento e números do percurso |
+| Projetos | Dez projetos com filtro por categoria, capturas reais e detalhes técnicos |
+| Formação | Graduação, cursos, certificações com código de autenticação e números do percurso |
 | Contato | E-mail, GitHub e LinkedIn, além do que busco profissionalmente |
 
 ## Decisões técnicas
@@ -138,7 +138,7 @@ portfolio/
 
 Todo o conteúdo textual está centralizado em `src/content/`:
 
-- **`site.ts`** — nome, cargo, contatos, textos da seção Sobre, formação e princípios.
+- **`site.ts`** — nome, cargo, contatos, textos da seção Sobre, formação, certificações e princípios.
 - **`projects.ts`** — lista de projetos, com problema, solução e destaques técnicos.
 - **`skills.ts`** — grupos de habilidades e níveis declarados.
 
@@ -172,3 +172,4 @@ Distribuído sob a licença MIT. Consulte [LICENSE](LICENSE).
 - **GitHub:** [@nicolasmoreiraferreira](https://github.com/nicolasmoreiraferreira)
 - **LinkedIn:** [linkedin.com/in/nicolasmoreiraferreira](https://www.linkedin.com/in/nicolasmoreiraferreira/)
 - **E-mail:** nikola.snay@hotmail.com
+- **`site.ts`** — nome, cargo, contatos, textos da seção Sobre, formação, certificações e princípios.
